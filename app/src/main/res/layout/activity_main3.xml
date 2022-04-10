@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="2"
+        android:layout_margin="20dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/start_quiz1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/pro"
+            >
+
+            <ImageView
+                android:id="@+id/start_quiz1_image"
+                android:layout_width="134dp"
+                android:layout_height="116dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/license"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/start_quiz2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/history">
+
+            <ImageView
+                android:id="@+id/start_quiz2_image"
+                android:layout_width="134dp"
+                android:layout_height="116dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/geography" />
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/start_quiz3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/history"
+            >
+
+            <ImageView
+                android:id="@+id/start_quiz3_image"
+                android:layout_width="134dp"
+                android:layout_height="116dp"
+                app:srcCompat="@drawable/redflag"
+                android:layout_gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/start_quiz4"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/pro">
+
+            <ImageView
+                android:id="@+id/start_quiz4_image"
+                android:layout_width="134dp"
+                android:layout_height="116dp"
+                app:srcCompat="@drawable/programming"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>

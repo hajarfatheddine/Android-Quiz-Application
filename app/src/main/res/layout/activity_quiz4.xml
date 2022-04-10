@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".quiz4">
+
+    <TextView
+        android:id="@+id/titleQuiz4"
+        android:layout_width="153dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:text="@string/Quiz4"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageQuiz4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/q4"
+        android:contentDescription="@string/description_image_quiz4" />
+
+    <TextView
+        android:id="@+id/Question4"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/question4"
+        android:gravity="fill"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_quiz4"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/choix_quiz4_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/choix_4_1" />
+
+        <RadioButton
+            android:id="@+id/choix_quiz4_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/choix_4_2" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/next_quiz4"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+</LinearLayout>
