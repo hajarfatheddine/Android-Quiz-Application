@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class resetpass extends AppCompatActivity {
 
     EditText email_reset;
-    Button useremail;
+    Button btn;
     FirebaseAuth auth;
 
     @Override
@@ -24,10 +24,10 @@ public class resetpass extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resetpass);
         email_reset=findViewById(R.id.resetemail);
-        useremail=findViewById(R.id.submitreset);
+        btn=findViewById(R.id.submitreset);
         auth =FirebaseAuth.getInstance();
 
-        useremail.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 auth.sendPasswordResetEmail(email_reset.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
