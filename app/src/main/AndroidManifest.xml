@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Application_Quiz">
         <activity
+            android:name=".resetpass"
+            android:exported="false" />
+        <activity
             android:name=".pro5"
             android:exported="false" />
         <activity

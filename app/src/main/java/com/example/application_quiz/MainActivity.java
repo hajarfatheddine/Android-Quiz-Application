@@ -22,12 +22,16 @@ public class MainActivity extends AppCompatActivity {
     Button signin;
     TextView register;
     FirebaseAuth auth;
+    Button reset;
     public int counter=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+reset=findViewById(R.id.resetpassword);
         //recuperer les views par leur id
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -80,5 +84,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MainActivity2.class));
             }
         });
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, resetpass.class));
+            }
+        });
     }
+
 }

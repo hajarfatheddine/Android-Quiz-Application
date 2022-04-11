@@ -52,6 +52,16 @@
         android:backgroundTint="@color/grey"
         android:textColor="@color/black"
         />
+    <Button
+        android:id="@+id/resetpassword"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="reset password"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/license"
+        android:textColor="@color/black"
+        />
 
     <TextView
         android:id="@+id/register"
