@@ -50,8 +50,23 @@ public class MainActivity2 extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
+
+                                    auth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if(task.isSuccessful()){
+                                                Toast.makeText(MainActivity2.this, "Succesfull: Please check your Email", Toast.LENGTH_LONG).show();
+                                                email.setText("");
+                                                password.setText("");
+                                            }else{
+                                                Toast.makeText(MainActivity2.this,"Error",Toast.LENGTH_SHORT).show();
+
+                                            }
+
+                                        }
+                                    });
                                     startActivity(new Intent(MainActivity2.this, MainActivity.class));
-                                    Toast.makeText(MainActivity2.this, "Succesfull", Toast.LENGTH_LONG).show();
+
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_LONG).show();
                                 }
