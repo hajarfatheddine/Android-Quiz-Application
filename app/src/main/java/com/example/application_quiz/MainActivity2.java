@@ -56,8 +56,7 @@ public class MainActivity2 extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if(task.isSuccessful()){
                                                 Toast.makeText(MainActivity2.this, "Succesfull: Please check your Email", Toast.LENGTH_LONG).show();
-                                                email.setText("");
-                                                password.setText("");
+
                                             }else{
                                                 Toast.makeText(MainActivity2.this,"Error",Toast.LENGTH_SHORT).show();
 

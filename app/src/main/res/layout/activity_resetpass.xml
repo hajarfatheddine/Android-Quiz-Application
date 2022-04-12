@@ -7,12 +7,19 @@
     android:orientation="vertical"
     tools:context=".resetpass">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/reset"
+        />
     <EditText
         android:id="@+id/resetemail"
         android:layout_width="353dp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_marginBottom="20dp"
         android:inputType="textEmailAddress"
         android:hint="@string/email" />

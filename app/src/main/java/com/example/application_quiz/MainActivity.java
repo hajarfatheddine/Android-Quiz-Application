@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,16 +23,15 @@ public class MainActivity extends AppCompatActivity {
     Button signin;
     TextView register;
     FirebaseAuth auth;
-    Button reset;
+    TextView reset;
     public int counter=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        reset=findViewById(R.id.resetpassword);
 
-
-reset=findViewById(R.id.resetpassword);
         //recuperer les views par leur id
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -56,7 +56,6 @@ reset=findViewById(R.id.resetpassword);
                             }
                             else{
                                 Toast.makeText(getApplicationContext(), "Please verify your email address", Toast.LENGTH_LONG).show();
-
                             }
 
                         } else {

@@ -20,20 +20,38 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
-            app:cardElevation="0dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:backgroundTint="@color/pro"
+            android:backgroundTint="@color/license"
             >
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
             <ImageView
                 android:id="@+id/start_quiz1_image"
                 android:layout_width="134dp"
                 android:layout_height="116dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/license"
+                android:layout_marginBottom="20dp"
                 />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Code de route"
+    android:textSize="18sp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+    android:textColor="@color/black"
+    />
+</LinearLayout>
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -41,18 +59,40 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
-            app:cardElevation="0dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:backgroundTint="@color/history">
 
-            <ImageView
-                android:id="@+id/start_quiz2_image"
-                android:layout_width="134dp"
-                android:layout_height="116dp"
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/geography" />
+                >
+                <ImageView
+                    android:id="@+id/start_quiz2_image"
+                    android:layout_width="134dp"
+                    android:layout_height="116dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    app:srcCompat="@drawable/geography" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geographie"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+
 
 
         </androidx.cardview.widget.CardView>
@@ -61,38 +101,82 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
-            app:cardElevation="0dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:backgroundTint="@color/history"
             >
-
-            <ImageView
-                android:id="@+id/start_quiz3_image"
-                android:layout_width="134dp"
-                android:layout_height="116dp"
-                app:srcCompat="@drawable/redflag"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_gravity="center"
-                />
+                >
+
+                <ImageView
+                    android:id="@+id/start_quiz3_image"
+                    android:layout_width="134dp"
+                    android:layout_height="116dp"
+                    app:srcCompat="@drawable/redflag"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="drapeaux"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/start_quiz4"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
-            app:cardElevation="0dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:backgroundTint="@color/pro">
 
-            <ImageView
-                android:id="@+id/start_quiz4_image"
-                android:layout_width="134dp"
-                android:layout_height="116dp"
-                app:srcCompat="@drawable/programming"
-                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/start_quiz4_image"
+                    android:layout_width="134dp"
+                    android:layout_height="116dp"
+                    app:srcCompat="@drawable/programming"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CODING"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+
         </androidx.cardview.widget.CardView>
 
     </androidx.gridlayout.widget.GridLayout>

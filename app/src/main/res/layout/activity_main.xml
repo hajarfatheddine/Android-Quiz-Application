@@ -35,13 +35,26 @@
         android:layout_height="43dp"
         android:layout_marginStart="27dp"
         android:layout_marginEnd="27dp"
-        android:layout_marginBottom="40dp"
         android:autofillHints="password"
         android:drawableStart="@drawable/ic_action_name_lock"
         android:hint="@string/pass"
         android:inputType="textPassword"
         />
+    <TextView
+        android:id="@+id/resetpassword"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:contextClickable="true"
+        android:text="@string/hyperlink"
+        android:textColorLink="@color/CadetBlue"
 
+
+        android:backgroundTint="@color/license"
+        android:textColor="@color/black"
+        />
     <Button
         android:id="@+id/submitButton"
         android:layout_width="198dp"
@@ -52,17 +65,6 @@
         android:backgroundTint="@color/grey"
         android:textColor="@color/black"
         />
-    <Button
-        android:id="@+id/resetpassword"
-        android:layout_width="198dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="10dp"
-        android:text="reset password"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/license"
-        android:textColor="@color/black"
-        />
-
     <TextView
         android:id="@+id/register"
         android:layout_width="163dp"

@@ -87,6 +87,7 @@ public class quiz1 extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog,
                                                 int which)
+                                    //which est l'identifiant du bouton negative
                             {
 
                                 // When the user click yes button
